@@ -19,22 +19,22 @@
          * Host de conexão com o banco de dados
          * @var string
          */
-        const HOST = 'localhost';
+        const HOST = 'db.thneqjfxhqiutdqqlbyp.supabase.co';
         /**
          * Nome do banco de dados
          * @var string
          */
-        const NAME = 'empresa';
+        const NAME = 'postgres';
         /**
          * Usuário do banco de dados
          * @var string
          */
-        const USER = 'root';
+        const USER = 'postgres';
         /**
          * Senha do banco de dados
          * @var string
          */
-        const PASS = '';
+        const PASS = 'j5V5yXhA2b6xIyk8';
 
         /**
          * Nome da tabela a ser manipulada
