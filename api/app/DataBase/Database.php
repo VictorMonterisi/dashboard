@@ -19,32 +19,23 @@
          * Host de conexão com o banco de dados
          * @var string
          */
-        const HOST = 'gateway01.us-west-2.prod.aws.tidbcloud.com';
+        const HOST = 'localhost';
         /**
          * Nome do banco de dados
          * @var string
          */
-        const NAME = 'empresa';
-        /**
-         * Porta do banco de dados
-         * @var integer
-         */
-        const PORT = 4000;
+        const NAME = 'id21217052_empresa';
         /**
          * Usuário do banco de dados
          * @var string
          */
-        const USER = '22scSsh8byXoYBV.root';
+        const USER = 'id21217052_principal';
         /**
          * Senha do banco de dados
          * @var string
          */
-        const PASS = '8q0NR54Bjmff5rdO';
-        /**
-         * SSL
-         * @var string
-         */
-        const SSL = 'TIDB_SSL_CA';
+        const PASS = 'Banco159$#';
+
         /**
          * Nome da tabela a ser manipulada
          * @var string
@@ -74,7 +65,7 @@
             // O try / catch faz uma manipulação segura do BD, pois consegue tratar os erros que o sistema pode mostrar
             // PDOException $e serve para gerenciar as exceções
             try {
-                $this->connection = new PDO('mysql:host='.self::HOST.';port='.self::PORT.';ssl='.self::SSL.';dbname='.self::NAME,self::USER, self::PASS);
+                $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME,self::USER, self::PASS);
                 $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION); // Se ocorrer um erro em uma query, será retornada uma exception travando o sistema através de erro fatal
             }catch(PDOException $e){
                 die('ERROR: '.$e->getMessage());
