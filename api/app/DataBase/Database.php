@@ -41,10 +41,10 @@
          */
         const PASS = '8q0NR54Bjmff5rdO';
         /**
-         * SSL Path do banco de dados
+         * SSL
          * @var string
          */
-        const ssl_ca = 'TIDB_SSL_CA';
+        const SSL = 'TIDB_SSL_CA';
         /**
          * Nome da tabela a ser manipulada
          * @var string
@@ -74,7 +74,7 @@
             // O try / catch faz uma manipulação segura do BD, pois consegue tratar os erros que o sistema pode mostrar
             // PDOException $e serve para gerenciar as exceções
             try {
-                $this->connection = new PDO('mysql:host='.self::HOST.';port='.self::PORT.';dbname='.self::NAME,self::USER, self::PASS.'ssl_ca='.sef::ssl_ca.';');
+                $this->connection = new PDO('mysql:host='.self::HOST.';port='.self::PORT.';ssl='.self::SSL.';dbname='.self::NAME,self::USER, self::PASS);
                 $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION); // Se ocorrer um erro em uma query, será retornada uma exception travando o sistema através de erro fatal
             }catch(PDOException $e){
                 die('ERROR: '.$e->getMessage());
