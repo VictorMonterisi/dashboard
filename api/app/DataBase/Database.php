@@ -19,7 +19,7 @@
          * Host de conexão com o banco de dados
          * @var string
          */
-        const HOST = 'localhost';
+        const HOST = 'gateway01.us-west-2.prod.aws.tidbcloud.com';
         /**
          * Nome do banco de dados
          * @var string
@@ -34,12 +34,12 @@
          * Usuário do banco de dados
          * @var string
          */
-        const USER = 'root';
+        const USER = '22scSsh8byXoYBV.root';
         /**
          * Senha do banco de dados
          * @var string
          */
-        const PASS = '';
+        const PASS = '8q0NR54Bjmff5rdO';
 
         /**
          * Nome da tabela a ser manipulada
