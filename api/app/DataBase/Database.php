@@ -24,17 +24,22 @@
          * Nome do banco de dados
          * @var string
          */
-        const NAME = 'id21216672_empresa';
+        const NAME = 'empresa';
+        /**
+         * Porta do banco de dados
+         * @var integer
+         */
+        const PORT = 4000;
         /**
          * Usuário do banco de dados
          * @var string
          */
-        const USER = 'id21216672_principal';
+        const USER = 'root';
         /**
          * Senha do banco de dados
          * @var string
          */
-        const PASS = 'BancoD9*';
+        const PASS = '';
 
         /**
          * Nome da tabela a ser manipulada
@@ -65,7 +70,7 @@
             // O try / catch faz uma manipulação segura do BD, pois consegue tratar os erros que o sistema pode mostrar
             // PDOException $e serve para gerenciar as exceções
             try {
-                $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME,self::USER, self::PASS);
+                $this->connection = new PDO('mysql:host='.self::HOST.';port='.self::PORT.';dbname='.self::NAME,self::USER, self::PASS);
                 $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION); // Se ocorrer um erro em uma query, será retornada uma exception travando o sistema através de erro fatal
             }catch(PDOException $e){
                 die('ERROR: '.$e->getMessage());
