@@ -24,17 +24,17 @@
          * Nome do banco de dados
          * @var string
          */
-        const NAME = 'empresa';
+        const NAME = 'id21216672_empresa';
         /**
          * Usuário do banco de dados
          * @var string
          */
-        const USER = 'root';
+        const USER = 'id21216672_principal';
         /**
          * Senha do banco de dados
          * @var string
          */
-        const PASS = '';
+        const PASS = 'BancoD9*';
 
         /**
          * Nome da tabela a ser manipulada

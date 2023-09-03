@@ -6,9 +6,6 @@
 ?>
 
 <main>
-    <!-- <section>
-        <a href="index.php" class="btn btn-success">Voltar</a>
-    </section> -->
     <h2 class="mt-3"><?=TITLE?></h2>
     <form method="post"> <!-- Não tem action pois a ação do formulário sempre é para a mesma página -->
         <div class="form-group">
