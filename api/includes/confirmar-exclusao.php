@@ -6,9 +6,6 @@
 ?>
 
 <main>
-    <div class="mt-3">
-        <a href="index.php" class="btn btn-success">Voltar</a>
-    </div>
     <h2 class="mt-3">Excluir Produto</h2>
     <form method="post"> <!-- Não tem action pois a ação do formulário sempre é para a mesma página -->
         <div class="form-group">

@@ -24,8 +24,9 @@
             <label>Quantidade</label>
             <input type="number" name="quantidade" value="<?=$valueQuantidade?>" class="form-control">
         </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success">Enviar</button>
+        <div class="form-group mt-3">
+            <a href="index.php" class="btn btn-success">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
 </main>
