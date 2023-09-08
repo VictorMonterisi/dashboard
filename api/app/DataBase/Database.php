@@ -42,7 +42,7 @@
          */
         private $table;
         /**
-         * Instância de conexão ao banco de dados
+         * Faz a instância de conexão ao banco de dados
          * @var PDO
          */
         private $connection; // É a instância de PDO (grupo de classes que irão ajudar a conectar ao banco de dados MySQL) Uma vantagem do PDO é a facilidade da troca do banco de dados a ser trabalhado, pois precisa de somente um ajuste

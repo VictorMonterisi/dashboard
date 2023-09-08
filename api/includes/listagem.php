@@ -30,8 +30,9 @@
     $resultados = !empty($resultados) ? $resultados : '<tr><td colspan="6" class="text-center">Nenhum produto encontrado</td></tr>';
 ?>
 <main>
-
-    <?=$mensagem?>
+    <div class="mt-3">
+        <?=$mensagem?>
+    </div>
 
     <div>
         <table class="table bg-light mt-3">
